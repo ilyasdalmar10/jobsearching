@@ -6,7 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
-
+import os
 
 print("Hello and Welcome to the Job Alerter")
 users_job = input("Type in the job you are searching for: ")
@@ -45,8 +45,8 @@ def get_info_(website):
     try:
 
                 
-        chrome_driver_path = r"C:path_to_chromedriver"
-        brave_browser_path = r"C:path_to_brave" # For me I used this option becuase I like brave
+        chrome_driver_path = os.getenv("CHROME_DRIVER_PATH")
+        brave_browser_path = os.getenv("BRAVE_BROWSER_PATH") # For me I used this option becuase I like brave
         service = Service(executable_path=chrome_driver_path)
         options = Options()
         options.binary_location = brave_browser_path
