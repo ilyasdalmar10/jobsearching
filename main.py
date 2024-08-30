@@ -119,3 +119,7 @@ elif write_to == 2:
         feedback_file.write("\n" + feedback + "\n")
 else:
     print("Error: Please select a valid option")
+
+
+# MIT License
+# Copyright (c) [2024] [Ilyas Dalmar]

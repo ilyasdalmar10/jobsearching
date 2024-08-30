@@ -38,6 +38,11 @@ Make sure the chromedriver is compatible with your chrome or other search engine
 Configure Paths:
 
 Update the chrome_driver_path and options.binary_location in your script to reflect the correct paths on your system.
+It is optional to update the brave_browser_path.
+
+In Windows:
+type set CHROME_DRIVER_PATH "your_path_to_chromedriver" to set a tempoary enviroment variable
+
 Usage
 Run the Job Search Script: Execute the Python script to start the job searching process:
 
