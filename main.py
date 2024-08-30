@@ -45,8 +45,8 @@ def get_info_(website):
     try:
 
                 
-        chrome_driver_path = r"C:\driver\chromedriver-win64\chromedriver-win64\chromedriver.exe"
-        brave_browser_path = r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
+        chrome_driver_path = r"C:path_to_chromedriver"
+        brave_browser_path = r"C:path_to_brave" # For me I used this option becuase I like brave
         service = Service(executable_path=chrome_driver_path)
         options = Options()
         options.binary_location = brave_browser_path
